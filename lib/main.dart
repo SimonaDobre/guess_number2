@@ -98,11 +98,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               ElevatedButton(
-                  child: const Text('TRY'),
-                  onPressed: () {
-                    adviceToUser();
-                    myController.clear();
-                  },),
+                child: const Text('TRY'),
+                onPressed: () {
+                  adviceToUser();
+                  myController.clear();
+                },
+              ),
               Padding(
                 padding: const EdgeInsets.all(18),
                 child: Text(
@@ -121,15 +122,17 @@ class _MyHomePageState extends State<MyHomePage> {
                     Row(
                       children: <Widget>[
                         TextButton(
-                            child: const Text('Yes'),
-                            onPressed: () {
-                              newGame();
-                            },),
+                          child: const Text('Yes'),
+                          onPressed: () {
+                            newGame();
+                          },
+                        ),
                         TextButton(
-                            child: const Text('No. Exit game!'),
-                            onPressed: () {
-                              exit(0);
-                            },)
+                          child: const Text('No. Exit game!'),
+                          onPressed: () {
+                            exit(0);
+                          },
+                        )
                       ],
                     )
                   ],
